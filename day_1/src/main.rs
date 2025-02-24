@@ -1,4 +1,3 @@
-use file_reader;
 use std::collections::HashMap;
 
 const INPUT_PATH: &str = "input.txt";
