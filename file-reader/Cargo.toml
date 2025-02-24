@@ -1,7 +1,6 @@
 [package]
-name = "day_1"
+name = "file-reader"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-file-reader = { path = "../file-reader" }

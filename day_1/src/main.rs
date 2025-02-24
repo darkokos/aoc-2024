@@ -1,10 +1,8 @@
-use std::{collections::HashMap, fs};
+use file_reader;
+use std::collections::HashMap;
 
+const INPUT_PATH: &str = "input.txt";
 const COLUMN_DELIMITER: &str = "   ";
-
-fn get_input() -> String {
-    fs::read_to_string("input.txt").expect("The file should have been read")
-}
 
 fn a(input: &str) {
     let mut first_list = Vec::with_capacity(1000);
@@ -49,7 +47,7 @@ fn b(input: &str) {
 }
 
 fn main() {
-    let input = get_input();
+    let input = file_reader::read_file(INPUT_PATH);
     a(&input);
     b(&input);
 }
